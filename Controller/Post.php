@@ -30,10 +30,14 @@ class Post extends WSPRO\Controller{
 
 	function post(){
 
-		$post=new Model_Post();
-		$post->title='hola2';
-		$post->content='comoestas';
-		$post->save();
+		$request=parent::getBodyRequest();
+			var_dump($request);
 	}
+
+	function put(){
+
+		
+	}
+
 
 }
